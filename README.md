@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 AITERVIEW – AI-Powered Mock Interview Platform  
 
-## Getting Started
+AI-Terview is an AI-driven **mock interview platform** that **generates dynamic interview questions, evaluates responses, and provides real-time AI feedback** using **Gemini AI**. It helps users practice technical interviews in an interactive way.  
 
-First, run the development server:
+Built with **Next.js, Drizzle ORM, PostgreSQL, and Clerk Auth**, AI-Terview ensures an **engaging, scalable, and secure** experience for users preparing for job interviews.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Tech Stack  
+
+- **Frontend:** Next.js, React, Tailwind CSS  
+- **Backend:** Drizzle ORM, PostgreSQL, NeonDB  
+- **AI Integration:** Gemini AI API  
+- **Authentication:** Clerk Auth  
+- **Deployment:** Vercel (Frontend), Cloudflare Workers (Backend)  
+
+---
+
+## ✨ Features  
+
+✅ **AI-generated interview questions** 📑  
+✅ **Real-time AI feedback & scoring** using **Gemini AI** 🤖  
+✅ **User authentication & role management** with Clerk 🔐  
+✅ **Optimized database queries** using **Drizzle ORM & PostgreSQL** ⚡  
+✅ **Configurable question count** for a personalized experience 🎯  
+✅ **Seamless deployment** with **Vercel & Cloudflare Workers** 🚀  
+
+---
+
+## 📦 Installation & Setup  
+
+### 1️⃣ Clone the Repository  
+```sh
+git clone https://github.com/your-username/aiterview.git
+cd aiterview
+npm install
 ```
+## Set up .env.local
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Clerk Authentication  
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key  
+CLERK_SECRET_KEY=your_clerk_secret_key  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Clerk Sign-in & Sign-up URLs  
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=your_clerk_signin_url  
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=your_clerk_signup_url  
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Database Credentials  
+NEXT_PUBLIC_DRIZZLE_DATABASE_URL=your_database_url  
 
-## Learn More
+# AI Configuration  
+NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT=5  
+NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key  
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```sh
+npm run dev
+```
